@@ -7,9 +7,14 @@ var app = express();
 //    console.log("Got a GET request for the homepage");
 //    res.send('Hello GET');
 // })
+// app.get('/', function (req, res) {
+//     console.log("Got a GET request for the homepage");
+//     const userCount = Math.ceil(Math.random() * 100);
+//     res.send(`Hello GET. Users are: ${userCount}`);
+//  })
 app.get('/', function (req, res) {
     console.log("Got a GET request for the homepage");
-    const userCount = Math.ceil(Math.random() * 100);
+    const userCount = 10;
     res.send(`Hello GET. Users are: ${userCount}`);
  })
 
